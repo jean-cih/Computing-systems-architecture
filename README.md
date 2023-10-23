@@ -185,7 +185,7 @@ done
 
 ## Код
 
-`#!/bin/bash`
+#!/bin/bash
 
 echo -e "\nDate: $(date)\nAccount name: $USER"
 
@@ -209,6 +209,8 @@ echo -e " SWAP total - $(free -h | grep -E 'Swap' | awk '{print $2}')\n SWAP ava
 
 echo -e "\nNetwork interfaces:\n Number of network interfaces - $(ls /sys/class/net | cat -n | tail -1 | awk '{print $1}')"
 
+
+#Table
 
 number=1
 printf "| %-2s | %-25s | %-17s | %-10s | %-15s |\n" "#" "Name of network interface" "MAC adress" "IP adress" "Speed conection"
